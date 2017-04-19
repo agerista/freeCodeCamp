@@ -7,15 +7,11 @@ function mutation(arr) {
   var result = true;
   
   for (var i=0; i<other.length; i++) {
-    console.log(other[i]);
-    console.log(check.indexOf(other[i]) !== -1);
     if (check.indexOf(other[i]) === -1){
       result = false;
     }
   }
-  
   return result;
-   
 }
 
 mutation(["hello", "hey"]); // false.
